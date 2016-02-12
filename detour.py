@@ -54,15 +54,15 @@ def detour(a, b, c, d):
         ac = distance(a, c)
         db = distance(d, b)
         acdb = ac + cd + db
-        print(("Driver one: " + str(acdb) + " km"))
+        print(("Driver one - A->C->D->B: " + str(acdb) + " km"))
     else:
         ca = distance(c, a)
         bd = distance(b, d)
         cabd = ca + ab + bd
         if cd > ab:
-            print(("Driver two: " + str(cabd) + " km"))
+            print(("Driver two - C->A->D->B: " + str(cabd) + " km"))
         else:
-            print(("Either driver: " + str(cabd) + " km"))
+            print(("Either driver (equivalent distances): " + str(cabd) + " km"))
 
 # Make sure we have the correct command line arguments
 if len(argv) != 9:
